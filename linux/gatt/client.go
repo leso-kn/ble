@@ -473,3 +473,7 @@ func (p *Client) Pair(authData ble.AuthData, to time.Duration) error {
 func (p *Client) StartEncryption(ch chan ble.EncryptionChangedInfo) error {
 	return p.conn.StartEncryption(ch)
 }
+
+func (p *Client) HandleExternalEncryption(ch chan ble.EncryptionChangedInfo) {
+	p.conn.HandleExternalEncryption(ch)
+}

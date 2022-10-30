@@ -79,4 +79,6 @@ type Client interface {
 	Pair(AuthData, time.Duration) error
 
 	StartEncryption(c chan EncryptionChangedInfo) error
+
+	HandleExternalEncryption(c chan EncryptionChangedInfo)
 }

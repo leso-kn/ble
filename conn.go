@@ -49,4 +49,6 @@ type Conn interface {
 	Pair(AuthData, time.Duration) error
 
 	StartEncryption(change chan EncryptionChangedInfo) error
+
+	HandleExternalEncryption(change chan EncryptionChangedInfo)
 }

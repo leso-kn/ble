@@ -172,6 +172,10 @@ func (c *Conn) StartEncryption(ch chan ble.EncryptionChangedInfo) error {
 	return err
 }
 
+func (c *Conn) HandleExternalEncryption(ch chan ble.EncryptionChangedInfo) {
+	c.encChanged = ch
+}
+
 // Read copies re-assembled L2CAP PDUs into sdu.
 func (c *Conn) Read(sdu []byte) (n int, err error) {
 	p, ok := <-c.chInPDU
