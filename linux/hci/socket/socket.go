@@ -1,3 +1,4 @@
+//go:build linux
 // +build linux
 
 package socket
@@ -9,8 +10,8 @@ import (
 	"time"
 	"unsafe"
 
+	"github.com/leso-kn/ble"
 	"github.com/pkg/errors"
-	"github.com/rigado/ble"
 	"golang.org/x/sys/unix"
 )
 

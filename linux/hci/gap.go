@@ -6,11 +6,11 @@ import (
 	"net"
 	"time"
 
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/linux/adv"
+	"github.com/leso-kn/ble/linux/gatt"
+	"github.com/leso-kn/ble/sliceops"
 	"github.com/pkg/errors"
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/linux/adv"
-	"github.com/rigado/ble/linux/gatt"
-	"github.com/rigado/ble/sliceops"
 )
 
 // Addr ...

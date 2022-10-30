@@ -4,8 +4,8 @@ import (
 	"log"
 	"sync"
 
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/linux/att"
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/linux/att"
 )
 
 // NewServerWithName creates a new Server with the specified name

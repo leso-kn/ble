@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/rigado/ble/cache"
+	"github.com/leso-kn/ble/cache"
 
-	"github.com/rigado/ble/linux/hci/cmd"
+	"github.com/leso-kn/ble/linux/hci/cmd"
 )
 
 // SetDialerTimeout sets dialing timeout for Dialer.

@@ -1,8 +1,8 @@
 package dev
 
 import (
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/darwin"
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/darwin"
 )
 
 // DefaultDevice ...

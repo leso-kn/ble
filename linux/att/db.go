@@ -3,7 +3,7 @@ package att
 import (
 	"encoding/binary"
 
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 )
 
 // A DB is a contiguous range of attributes.

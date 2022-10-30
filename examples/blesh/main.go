@@ -9,11 +9,11 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/examples/lib"
+	"github.com/leso-kn/ble/examples/lib/dev"
+	"github.com/leso-kn/ble/linux"
 	"github.com/pkg/errors"
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/examples/lib"
-	"github.com/rigado/ble/examples/lib/dev"
-	"github.com/rigado/ble/linux"
 	"github.com/urfave/cli"
 )
 

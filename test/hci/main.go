@@ -8,20 +8,20 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/linux"
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/linux"
 	"github.com/pkg/errors"
 )
 
 var (
-	device = flag.Int("device", 1, "hci index")
-	name   = flag.String("name", "", "name of remote peripheral")
-	addr   = flag.String("addr", "", "address of remote peripheral (MAC on Linux, UUID on OS X)")
-	sub    = flag.Duration("sub", 0, "subscribe to notification and indication for a specified period")
-	sd     = flag.Duration("sd", 20*time.Second, "scanning duration, 0 for indefinitely")
-	bond = flag.Bool("bond", false, "attempt to bond on connection")
+	device       = flag.Int("device", 1, "hci index")
+	name         = flag.String("name", "", "name of remote peripheral")
+	addr         = flag.String("addr", "", "address of remote peripheral (MAC on Linux, UUID on OS X)")
+	sub          = flag.Duration("sub", 0, "subscribe to notification and indication for a specified period")
+	sd           = flag.Duration("sd", 20*time.Second, "scanning duration, 0 for indefinitely")
+	bond         = flag.Bool("bond", false, "attempt to bond on connection")
 	forceEncrypt = flag.Bool("fe", false, "force encryption to be started if bond information is found")
-	test = flag.String("test", "", "the test to be run")
+	test         = flag.String("test", "", "the test to be run")
 )
 
 func main() {
@@ -160,7 +160,7 @@ func runTest(test string) {
 
 func runScanTest() {
 	optid := ble.OptDeviceID(*device)
-	d, err := linux.NewDeviceWithNameAndHandler("", nil, optid)//, optSecurity)
+	d, err := linux.NewDeviceWithNameAndHandler("", nil, optid) //, optSecurity)
 	if err != nil {
 		log.Fatalf("can't new device : %s", err)
 	}
@@ -186,7 +186,7 @@ func runScanTest() {
 
 func runConnectTest() {
 	optid := ble.OptDeviceID(*device)
-	d, err := linux.NewDeviceWithNameAndHandler("", nil, optid)//, optSecurity)
+	d, err := linux.NewDeviceWithNameAndHandler("", nil, optid) //, optSecurity)
 	if err != nil {
 		log.Fatalf("can't new device : %s", err)
 	}
@@ -212,4 +212,3 @@ func runConnectTest() {
 		fmt.Println(err)
 	}
 }
-

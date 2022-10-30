@@ -1,6 +1,6 @@
 package att
 
-import "github.com/rigado/ble"
+import "github.com/leso-kn/ble"
 
 // attr is a BLE attribute.
 type attr struct {

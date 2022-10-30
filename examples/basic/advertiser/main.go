@@ -4,12 +4,13 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/rigado/ble/linux"
 	"log"
 	"time"
 
+	"github.com/leso-kn/ble/linux"
+
+	"github.com/leso-kn/ble"
 	"github.com/pkg/errors"
-	"github.com/rigado/ble"
 )
 
 var (

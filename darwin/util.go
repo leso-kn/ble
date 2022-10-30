@@ -1,6 +1,6 @@
 package darwin
 
-import "github.com/rigado/ble"
+import "github.com/leso-kn/ble"
 
 func uuidSlice(uu []ble.UUID) [][]byte {
 	us := [][]byte{}

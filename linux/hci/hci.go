@@ -8,11 +8,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/linux/hci/cmd"
+	"github.com/leso-kn/ble/linux/hci/evt"
+	"github.com/leso-kn/ble/sliceops"
 	"github.com/pkg/errors"
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/linux/hci/cmd"
-	"github.com/rigado/ble/linux/hci/evt"
-	"github.com/rigado/ble/sliceops"
 )
 
 // Command ...

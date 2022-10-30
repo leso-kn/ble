@@ -1,7 +1,7 @@
 package darwin
 
 import (
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 	"github.com/raff/goble/xpc"
 )
 

@@ -8,7 +8,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 )
 
 // NotificationHandler handles notification or indication.

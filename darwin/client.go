@@ -3,7 +3,7 @@ package darwin
 import (
 	"fmt"
 
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 	"github.com/raff/goble/xpc"
 )
 

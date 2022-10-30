@@ -9,7 +9,7 @@ go:
         - 1.13
         - tip
 
-go_import_path: github.com/rigado/ble
+go_import_path: github.com/leso-kn/ble
 
 install:
         - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then go get ./...; fi

@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 )
 
 type testPdu struct {

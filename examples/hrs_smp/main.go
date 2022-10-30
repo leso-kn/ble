@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/linux"
-	bonds "github.com/rigado/ble/linux/hci/bond"
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/linux"
+	bonds "github.com/leso-kn/ble/linux/hci/bond"
 )
 
 var (

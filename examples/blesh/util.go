@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 	"github.com/pkg/errors"
 	"github.com/urfave/cli"
 )

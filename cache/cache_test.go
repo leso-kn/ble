@@ -1,10 +1,11 @@
 package cache
 
 import (
-	"github.com/rigado/ble"
 	"os"
 	"reflect"
 	"testing"
+
+	"github.com/leso-kn/ble"
 )
 
 func TestGattCache_Store(t *testing.T) {

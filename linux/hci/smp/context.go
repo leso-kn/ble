@@ -8,9 +8,9 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/linux/hci"
-	"github.com/rigado/ble/sliceops"
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/linux/hci"
+	"github.com/leso-kn/ble/sliceops"
 )
 
 const (

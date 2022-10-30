@@ -1,6 +1,6 @@
 package lib
 
-import "github.com/rigado/ble"
+import "github.com/leso-kn/ble"
 
 // NewBatteryService ...
 func NewBatteryService() *ble.Service {

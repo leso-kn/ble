@@ -5,8 +5,9 @@ import (
 	"fmt"
 
 	"errors"
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/parser"
+
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/parser"
 )
 
 var keys = struct {

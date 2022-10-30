@@ -9,8 +9,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/linux/hci"
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/linux/hci"
 )
 
 type manager struct {

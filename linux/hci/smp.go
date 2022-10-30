@@ -3,7 +3,7 @@ package hci
 import (
 	"time"
 
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 )
 
 type smpDispatcher struct {

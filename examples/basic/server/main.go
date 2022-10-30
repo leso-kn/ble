@@ -7,9 +7,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/examples/lib"
-	"github.com/rigado/ble/examples/lib/dev"
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/examples/lib"
+	"github.com/leso-kn/ble/examples/lib/dev"
 	"github.com/pkg/errors"
 )
 

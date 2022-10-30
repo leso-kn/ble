@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 )
 
 func advHandler(a ble.Advertisement) {

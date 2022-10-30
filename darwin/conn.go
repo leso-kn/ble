@@ -5,7 +5,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 	"github.com/raff/goble/xpc"
 )
 

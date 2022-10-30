@@ -2,11 +2,12 @@ package cache
 
 import (
 	"fmt"
-	jsoniter "github.com/json-iterator/go"
-	"github.com/rigado/ble"
 	"io/ioutil"
 	"os"
 	"sync"
+
+	jsoniter "github.com/json-iterator/go"
+	"github.com/leso-kn/ble"
 )
 
 type gattCache struct {

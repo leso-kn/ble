@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 
 	"github.com/aead/cmac"
-	"github.com/rigado/ble/sliceops"
+	"github.com/leso-kn/ble/sliceops"
 )
 
 func aesCMAC(key, msg []byte) ([]byte, error) {

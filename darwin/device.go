@@ -8,9 +8,9 @@ import (
 	"log"
 	"time"
 
+	"github.com/leso-kn/ble"
 	"github.com/pkg/errors"
 	"github.com/raff/goble/xpc"
-	"github.com/rigado/ble"
 
 	"sync"
 )

@@ -4,7 +4,8 @@ import (
 	"fmt"
 
 	"errors"
-	"github.com/rigado/ble"
+
+	"github.com/leso-kn/ble"
 )
 
 var EmptyOrNilPdu = errors.New("nil/empty pdu")

@@ -7,7 +7,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 )
 
 type conn struct {

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 )
 
 func explore(cln ble.Client, p *ble.Profile) error {

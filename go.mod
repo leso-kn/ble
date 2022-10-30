@@ -1,4 +1,4 @@
-module github.com/rigado/ble
+module github.com/leso-kn/ble
 
 go 1.13
 

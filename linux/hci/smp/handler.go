@@ -6,7 +6,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/rigado/ble/linux/hci"
+	"github.com/leso-kn/ble/linux/hci"
 )
 
 //func smpOnPairingRequest(c *Conn, in pdu) ([]byte, error) {

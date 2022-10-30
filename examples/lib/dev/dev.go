@@ -1,7 +1,7 @@
 package dev
 
 import (
-	"github.com/rigado/ble"
+	"github.com/leso-kn/ble"
 )
 
 // NewDevice ...

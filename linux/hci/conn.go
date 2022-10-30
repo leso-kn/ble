@@ -9,10 +9,10 @@ import (
 	"net"
 	"time"
 
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/linux/hci/cmd"
+	"github.com/leso-kn/ble/linux/hci/evt"
 	"github.com/pkg/errors"
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/linux/hci/cmd"
-	"github.com/rigado/ble/linux/hci/evt"
 )
 
 // Conn ...

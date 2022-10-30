@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"io"
 
-	smp2 "github.com/rigado/ble/linux/hci/smp"
+	smp2 "github.com/leso-kn/ble/linux/hci/smp"
 
+	"github.com/leso-kn/ble"
+	"github.com/leso-kn/ble/linux/att"
+	"github.com/leso-kn/ble/linux/gatt"
+	"github.com/leso-kn/ble/linux/hci"
 	"github.com/pkg/errors"
-	"github.com/rigado/ble"
-	"github.com/rigado/ble/linux/att"
-	"github.com/rigado/ble/linux/gatt"
-	"github.com/rigado/ble/linux/hci"
 )
 
 // NewDevice returns the default HCI device.

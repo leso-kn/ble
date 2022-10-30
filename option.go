@@ -3,7 +3,7 @@ package ble
 import (
 	"time"
 
-	"github.com/rigado/ble/linux/hci/cmd"
+	"github.com/leso-kn/ble/linux/hci/cmd"
 )
 
 // DeviceOption is an interface which the device should implement to allow using configuration options
