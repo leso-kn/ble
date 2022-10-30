@@ -39,6 +39,7 @@ type SmpManager interface {
 	Pair(authData ble.AuthData, to time.Duration) error
 	BondInfoFor(addr string) BondInfo
 	DeleteBondInfo() error
+	SaveBondInfo() error
 	StartEncryption() error
 	SetWritePDUFunc(func([]byte) (int, error))
 	SetEncryptFunc(func(BondInfo) error)

@@ -162,6 +162,10 @@ func (m *manager) DeleteBondInfo() error {
 	return m.bondManager.Delete(hex.EncodeToString(m.pairing.remoteAddr))
 }
 
+func (m *manager) SaveBondInfo() error {
+	return m.bondManager.Save(hex.EncodeToString(m.pairing.remoteAddr), m.t.pairing.bond)
+}
+
 func (m *manager) LegacyPairingInfo() (bool, []byte) {
 	if m.pairing.legacy {
 		return true, m.pairing.shortTermKey

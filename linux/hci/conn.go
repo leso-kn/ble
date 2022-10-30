@@ -173,7 +173,15 @@ func (c *Conn) StartEncryption(ch chan ble.EncryptionChangedInfo) error {
 }
 
 func (c *Conn) HandleExternalEncryption(ch chan ble.EncryptionChangedInfo) {
-	c.encChanged = ch
+	w := make(chan ble.EncryptionChangedInfo)
+
+	go func() {
+		for bi := range w {
+			c.smp.SaveBondInfo()
+			ch <- bi
+		}
+	}()
+	c.encChanged = w
 }
 
 // Read copies re-assembled L2CAP PDUs into sdu.
