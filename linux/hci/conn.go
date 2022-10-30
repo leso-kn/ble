@@ -315,6 +315,8 @@ func (c *Conn) stkEncrypt(key []byte) error {
 	m.EncryptedDiversifier = 0
 	m.RandomNumber = 0
 
+	c.smp.SaveBondInfo(NewBondInfo(m.LongTermKey[:], m.EncryptedDiversifier, m.RandomNumber, true))
+
 	return c.hci.Send(&m, nil)
 }
 
