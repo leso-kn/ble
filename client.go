@@ -80,5 +80,5 @@ type Client interface {
 
 	StartEncryption(c chan EncryptionChangedInfo) error
 
-	HandleExternalEncryption(c chan EncryptionChangedInfo)
+	PrepareCustomPairing(c chan bool)
 }

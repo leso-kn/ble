@@ -57,7 +57,13 @@ func smpOnPairingResponse(t *transport, in pdu) ([]byte, error) {
 		return nil, fmt.Errorf("pairing requires OOB data but OOB data not specified")
 	}
 
-	if t.pairing.legacy {
+	if t.pairing.customPairingHandler != nil {
+		// Short term pairing is done.
+		// Next: Perform custom pairing logic.
+		t.pairing.state = Init
+		*t.pairing.customPairingHandler <- true
+		return nil, nil
+	} else if t.pairing.legacy {
 		return nil, t.sendMConfirm()
 	}
 

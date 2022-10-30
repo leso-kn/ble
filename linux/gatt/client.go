@@ -474,6 +474,6 @@ func (p *Client) StartEncryption(ch chan ble.EncryptionChangedInfo) error {
 	return p.conn.StartEncryption(ch)
 }
 
-func (p *Client) HandleExternalEncryption(ch chan ble.EncryptionChangedInfo) {
-	p.conn.HandleExternalEncryption(ch)
+func (p *Client) PrepareCustomPairing(ch chan bool) {
+	p.conn.PrepareCustomPairing(ch)
 }

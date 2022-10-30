@@ -130,6 +130,10 @@ func (m *manager) Pair(authData ble.AuthData, to time.Duration) error {
 	return m.waitResult(to)
 }
 
+func (m *manager) PrepareCustomPairing(ch chan bool) {
+	m.pairing.customPairingHandler = &ch
+}
+
 func (m *manager) waitResult(to time.Duration) error {
 	select {
 	case err := <-m.result:

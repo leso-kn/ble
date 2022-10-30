@@ -50,5 +50,5 @@ type Conn interface {
 
 	StartEncryption(change chan EncryptionChangedInfo) error
 
-	HandleExternalEncryption(change chan EncryptionChangedInfo)
+	PrepareCustomPairing(c chan bool)
 }
