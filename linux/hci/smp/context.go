@@ -46,8 +46,9 @@ type pairingContext struct {
 	scDHKey            []byte
 	scRemoteDHKeyCheck []byte
 
-	legacy       bool
-	shortTermKey []byte
+	legacy               bool
+	customPairingHandler *chan bool
+	shortTermKey         []byte
 
 	passKeyIteration int
 

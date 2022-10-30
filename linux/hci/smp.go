@@ -37,6 +37,7 @@ type SmpManager interface {
 		localAddrType, remoteAddrType uint8)
 	Handle(data []byte) error
 	Pair(authData ble.AuthData, to time.Duration) error
+	PrepareCustomPairing(chan bool)
 	BondInfoFor(addr string) BondInfo
 	DeleteBondInfo() error
 	SaveBondInfo(BondInfo) error

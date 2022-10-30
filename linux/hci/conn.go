@@ -172,8 +172,8 @@ func (c *Conn) StartEncryption(ch chan ble.EncryptionChangedInfo) error {
 	return err
 }
 
-func (c *Conn) HandleExternalEncryption(ch chan ble.EncryptionChangedInfo) {
-	c.encChanged = ch
+func (c *Conn) PrepareCustomPairing(ch chan bool) {
+	c.smp.PrepareCustomPairing(ch)
 }
 
 // Read copies re-assembled L2CAP PDUs into sdu.
